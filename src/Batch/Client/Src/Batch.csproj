@@ -71,6 +71,7 @@
     <Compile Include="Common\Enumerations\OnAllTasksComplete.cs" />
     <Compile Include="Common\Enumerations\OSType.cs" />
     <Compile Include="Common\Enumerations\AddTaskStatus.cs" />
+    <Compile Include="FileStaging\FileStagingUtils.cs" />
     <Compile Include="ImageReference.cs" />
     <Compile Include="IPropertyMetadata.cs" />
     <Compile Include="IReadOnly.cs" />
@@ -113,11 +114,6 @@
     <Compile Include="CloudJob.cs" />
     <Compile Include="Common\BatchErrorCodeStrings.cs" />
     <Compile Include="DetailLevel.cs" />
-    <Compile Include="FileStaging\ErrorMessages.Designer.cs">
-      <DependentUpon>ErrorMessages.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
     <Compile Include="IInheritedBehaviors.cs" />
     <Compile Include="IPagedEnumerable.cs" />
     <Compile Include="IPagedEnumerator.cs" />
@@ -240,19 +236,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileStaging\StagingStorageAccount.cs" />
     <Compile Include="FileStaging\Constants.cs" />
-    <Compile Include="FileStaging\SequentialFileStaging.cs" />
     <Compile Include="FileStaging\FileStagingManager.cs" />
-    <Compile Include="FileStaging\FileStagingLinkedSources.cs" />
     <Compile Include="FileStaging\IFileStagingManager.cs" />
     <Compile Include="FileStaging\IFileStagingProvider.cs" />
-    <Compile Include="FileStaging\SequentialFileStagingArtifact.cs" />
-    <EmbeddedResource Include="FileStaging\ErrorMessages.resx">
-      <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
