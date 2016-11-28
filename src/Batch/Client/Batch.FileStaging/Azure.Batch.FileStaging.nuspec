@@ -26,7 +26,7 @@ For detailed release notes, see https://github.com/Azure/azure-sdk-for-net/blob/
     <dependencies>
       <group targetFramework=".NETFramework4.5">
         <dependency id="WindowsAzure.Storage" version="6.2.0" />
-		<dependency id="Azure.Batch" version="$version$" />
+        <dependency id="Azure.Batch" version="$version$" />
       </group>
     </dependencies>
   </metadata>
